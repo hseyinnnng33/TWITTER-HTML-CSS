@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Manrope&family=Nosifer&family=Noto+Sans:wght@500&family=Orienta&family=Oswald:wght@500&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Manrope&family=Nosifer&family=Orienta&family=Oswald:wght@500&family=Russo+One&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Manrope&family=Nosifer&family=Orienta&family=Oxygen&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Manrope&family=Nosifer&family=Orienta&family=Russo+One&family=Yantramanav:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Manrope&family=Nosifer&family=Orienta&family=Russo+One&family=Staatliches&display=swap');
+
+
+
+
+/* 
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Tilt Warp', cursive;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Yantramanav', sans-serif;
+font-family: 'Staatliches', cursive;
+*/
+
+/* 
+<i class="fas fa-hashtag"></i>  #
+<i class="fab fa-twitter"></i> logo
+<i class="fas fa-cog"></i> ayarlar
+<i class="fa-regular fa-magnifying-glass"></i> search
+<i class="fa-regular fa-ellipsis"></i> nokta
+
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yantramanav', sans-serif;
+    color: #fff;
+}
+
+
+#genel{
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.sol{
+    height: 100%;
+}
+
+.sol .icerik{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.sol .icerik .logo i{
+    font-size: 30px;
+    padding-left: 15px;
+}
+
+.sol .icerik .sol-yazi{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.sol .icerik .sol-yazi .kesfet{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+.sol .icerik .sol-yazi .kesfet:hover{
+    background-color: #353535;
+    border-radius: 30px;
+}
+
+.sol .icerik .sol-yazi .kesfet i{
+    font-size: 25px;
+}
+
+.sol .icerik .sol-yazi .kesfet h2{
+    padding: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+    display: block;
+}
+
+.orta{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.orta .orta-icerik{
+    padding: 5px;
+}
+
+.orta .orta-icerik .input{
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.orta .orta-icerik .input .input-i{
+    margin-left: 30px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.orta .orta-icerik .input .input-i:hover{
+    background-color: #b1b1b1;
+    border-radius: 50%;
+
+}
+
+.orta .orta-icerik .input .input-text{
+    background-color: #202327;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+.orta .orta-icerik .input .input-text span{
+    color: #71767b;
+}
+
+.orta .orta-icerik .input input{
+    width: 460px;
+    /* height: 40px; */
+    border-radius: 20px;
+    border-left: none;
+    border: none;
+    background-color: #202327;
+    padding-left: 15px;
+}
+
+.orta .orta-icerik .input input::placeholder{
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+.ana-icerik{
+    padding: 10px;
+}
+
+.ana-icerik .h2{
+    width: 100%;
+}
+
+.ana-icerik .h2 h2{
+    font-size: 20px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.ana-icerik .gundem{
+    padding-top: 20px;
+}
+
+.ana-icerik .gundem .icerikler{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.ana-icerik .gundem .icerikler:hover{
+    background-color: #080707;
+    border-radius: 30px;
+}
+
+.ana-icerik .gundem .icerikler .bir-p{
+    font-size: 13px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:#71767b;
+    padding: 5px 0;
+}
+
+.ana-icerik .gundem .tweet-1{
+    display: flex;
+    justify-content: space-between;
+} 
+
+.ana-icerik .gundem .tweet-1 .yazi{
+    display: flex;
+    flex-direction: column;
+}
+
+.ana-icerik .gundem .tweet-1 .yazi i{
+    font-size: 15px;
+}
+
+.ana-icerik .gundem .tweet-1 .yazi p{
+    font-size: 15px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.ana-icerik .gundem .tweet-1 .yazi .tweet{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    color:#71767b;
+    padding: 2px 0;
+}
+
+.ana-icerik .gundem .tweet-1 .nokta span{
+    color:#989b9f;
+}
+
+.ana-icerik .gundem .tweet-1 .nokta{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transition: 1s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.ana-icerik .gundem .tweet-1 .nokta span:hover{
+    color: blue;
+    border-radius: 50%;
+}
+
+.ana-icerik .gundem .tweet-1 .nokta:hover{
+    background-color: rgb(85, 85, 195);
+    border-radius: 50%;
+}
+
+.daha{
+    width: 100%;
+    padding-top: 10px;
+}
+
+.daha:hover{
+    background-color: #0e0d0d;
+    border-radius: 30px;
+}
+
+.daha a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #1d9bF0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.sag{
+    margin: 10px 30px;
+    max-width: 350px;
+}
+
+.sag .icerik-sag{
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 20px;
+}
+
+.sag .icerik-sag h2{
+    font-size: 20px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color: #E7E9EA;
+}
+
+.sag .icerik-sag p{
+    font-size: 14px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:#7b8085;
+    padding: 8px 0;
+}
+
+.sag .icerik-sag .kaydol{
+    display: flex;
+    flex-direction: column;
+}
+
+.sag .icerik-sag .kaydol .kaydol-1{
+    width: 300px;
+    background-color: #fff;
+    margin: 5px 0;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sag .icerik-sag .kaydol .kaydol-1 img{
+    width: 25px;
+}
+
+.sag .icerik-sag .kaydol .kaydol-1 p{
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    margin-left: 10px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.sag .icerik-sag p span{
+    color: #1d9bF0;
+}
+
+.alt{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.alt p{
+    font-size: 13px;
+    color: #b1b1b1;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+
+.orta .orta-icerik .input .logo{
+    display: none;
+}
+@media(max-width: 900px){
+    html,body{
+        overflow-x: hidden;
+    }
+
+    .sol{
+       display: none;
+    }
+   
+    .sag{
+        display: none;
+    }
+
+    .sol .icerik .sol-yazi .kesfet h2{
+        display: none;
+    }
+
+    .orta .orta-icerik .input{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .orta .orta-icerik .input input{
+        width: 100%;
+
+    }
+
+    .orta .orta-icerik .input .input-i{
+        display: flex;
+        justify-content: right;
+    }
+
+    .orta{
+        width: 100%;
+    }
+
+    .divi{
+        display: none;
+    }
+
+    .orta .orta-icerik .input .logo{
+        display: block;
+        font-size: 25px;
+    }
+
+
+}
